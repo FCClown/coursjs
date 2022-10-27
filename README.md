@@ -1,4 +1,4 @@
 # coursjs
-Localisation : EPSI
+Localisation : EPSI - NANTES
 
 Nom de code : Mirage

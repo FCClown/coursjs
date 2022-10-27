@@ -1,8 +1,12 @@
-// Utilisateur
+let scoreUtilisateur = 0
+let scoreOrdinateur = 0
+
 for(i = 1; i <= 3; i++) {
 
+    // Utilisateur
     const choixUtilisateur = prompt("Choisir votre signe !").toLowerCase()
     console.log(choixUtilisateur)
+
     // bot
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
@@ -28,8 +32,12 @@ for(i = 1; i <= 3; i++) {
     switch(resultRandom) {
         case "papier":
             if(choixUtilisateur === "pierre") {
+                scoreOrdinateur+=1
+                console.log(scoreOrdinateur)
                 alert("L'ordinateur gagne")
             } else if(choixUtilisateur === "ciseaux") {
+                scoreUtilisateur+=1
+                console.log(scoreUtilisateur)
                 alert("L'utilisateur gagne")
             } else if(choixUtilisateur === "papier") {
                 alert("Egalité")
@@ -37,10 +45,14 @@ for(i = 1; i <= 3; i++) {
             break
         case "ciseaux":
             if(choixUtilisateur === "pierre") {
+                scoreUtilisateur+=1
+                console.log(scoreUtilisateur)
                 alert("L'utilisateur gagne")
             } else if(choixUtilisateur === "ciseaux") {
                 alert("Egalité")
             } else if(choixUtilisateur === "papier") {
+                scoreOrdinateur+=1
+                console.log(scoreOrdinateur)
                 alert("L'ordinateur gagne")
             }
             break
@@ -48,11 +60,16 @@ for(i = 1; i <= 3; i++) {
             if(choixUtilisateur === "pierre") {
                 alert("Egalité")
             } else if(choixUtilisateur === "ciseaux") {
+                scoreOrdinateur+=1
+                console.log(scoreOrdinateur)
                 alert("L'ordinateur gagne")
             } else if(choixUtilisateur === "papier") {
+                scoreUtilisateur+=1
+                console.log(scoreUtilisateur)
                 alert("L'utilisateur gagne")
             }
             break
     }
-
+    console.log("Score Ordinateur " + scoreOrdinateur)
+    console.log("Score Utilisateur " + scoreUtilisateur)
 }

@@ -3,9 +3,11 @@ let scoreOrdinateur = 0
 
 for(i = 1; i <= 3; i++) {
 
+    let resultRandom
+
     // Utilisateur
     const choixUtilisateur = prompt("Choisir votre signe !").toLowerCase()
-    console.log(choixUtilisateur)
+    //console.log(choixUtilisateur)
 
     // bot
     function getRandomInt(max) {
@@ -14,7 +16,6 @@ for(i = 1; i <= 3; i++) {
 
     let random = getRandomInt(3)
     //console.log(random)
-    let resultRandom
 
     if(random === 0) {
         console.log("BOT : papier")
@@ -33,11 +34,11 @@ for(i = 1; i <= 3; i++) {
         case "papier":
             if(choixUtilisateur === "pierre") {
                 scoreOrdinateur+=1
-                console.log(scoreOrdinateur)
+                //console.log(scoreOrdinateur)
                 alert("L'ordinateur gagne")
             } else if(choixUtilisateur === "ciseaux") {
                 scoreUtilisateur+=1
-                console.log(scoreUtilisateur)
+                //console.log(scoreUtilisateur)
                 alert("L'utilisateur gagne")
             } else if(choixUtilisateur === "papier") {
                 alert("Egalité")
@@ -46,13 +47,13 @@ for(i = 1; i <= 3; i++) {
         case "ciseaux":
             if(choixUtilisateur === "pierre") {
                 scoreUtilisateur+=1
-                console.log(scoreUtilisateur)
+                //console.log(scoreUtilisateur)
                 alert("L'utilisateur gagne")
             } else if(choixUtilisateur === "ciseaux") {
                 alert("Egalité")
             } else if(choixUtilisateur === "papier") {
                 scoreOrdinateur+=1
-                console.log(scoreOrdinateur)
+                //console.log(scoreOrdinateur)
                 alert("L'ordinateur gagne")
             }
             break
@@ -61,11 +62,11 @@ for(i = 1; i <= 3; i++) {
                 alert("Egalité")
             } else if(choixUtilisateur === "ciseaux") {
                 scoreOrdinateur+=1
-                console.log(scoreOrdinateur)
+                //console.log(scoreOrdinateur)
                 alert("L'ordinateur gagne")
             } else if(choixUtilisateur === "papier") {
                 scoreUtilisateur+=1
-                console.log(scoreUtilisateur)
+                //console.log(scoreUtilisateur)
                 alert("L'utilisateur gagne")
             }
             break

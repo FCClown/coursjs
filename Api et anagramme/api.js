@@ -4,10 +4,6 @@
     const contenuJson = await contenu.json()
     console.log(contenuJson)
 
-    //contenuJson.forEach(element => {
-      //  console.log(element)
-    //});
-
     //contenuJson.records.forEach(element => console.log(element.fields.address));
 
     for(let i in contenuJson.records) {

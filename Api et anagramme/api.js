@@ -8,7 +8,10 @@
       //  console.log(element)
     //});
 
-    contenuJson.records.forEach(element => console.log(element.fields.address));
+    //contenuJson.records.forEach(element => console.log(element.fields.address));
 
+    for(let i in contenuJson.records) {
+      console.log("test : " + contenuJson.records[i].fields.address)
+    }
 
 })()
